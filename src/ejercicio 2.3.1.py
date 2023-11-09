@@ -7,13 +7,20 @@ def pediredad ():
         except ValueError:
             print("Por favor, dame un número")
 
+    return Edad
 
-if Edad<1: 
-    print ("error")
-else:
-    for i in range(0,Edad): 
-        print(i+1)
+def edadcont(Edad):
+    if Edad<1: 
+        print ("error")
+    else:
+        for i in range(0,Edad): 
+            print(i+1)
 
+def main():
+    edad = pediredad()
+    edadcont(edad)
 
+if __name__ == "__main__":
+    main()
 
 
