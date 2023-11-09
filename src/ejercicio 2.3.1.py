@@ -1,12 +1,13 @@
-Edad=int(input("¿cual es tu edad?: "))
+def pediredad ():
+    salir = False
+    while not salir:
+        try:
+            Edad=int(input("¿cual es tu edad?: "))
+            salir = True
+        except ValueError:
+            print("Por favor, dame un número")
 
-while Edad== None:
-    try:
-        Edad=int(input("¿cual es tu edad?: "))
-    except ValueError:
-        print("Por favor, dame un número")
 
-Edad==1
 if Edad<1: 
     print ("error")
 else:
